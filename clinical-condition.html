@@ -1,0 +1,721 @@
+<!DOCTYPE html>
+<html lang="Arabic" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/styles/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/styles/style-EN.css">
+    <title>Clinical Condition</title>
+</head>
+<body>
+<header class="header sticky-top">
+    <div class="header__wrapper">
+        <div class="header__hospital-logo">
+            <img src="assets/images/AHH-Logo.png" alt="Al Hammadi Hospital">
+        </div>
+        <div class="header__container">
+            <div class="header__details-card">
+                <div class="__photo user-photo">
+                    <img src="assets/images/user-photo.png" class="" alt="">
+                </div>
+                <div class="user-details">
+                    <p class="label-heading">3000</p>
+                    <p>Admin</p>
+                </div>
+            </div>
+
+            <div class="header__details-card ms-4 d-none d-lg-flex">
+                <div class="__photo">
+                    <img src="assets/images/icons/icon-loaction.svg" alt="">
+                </div>
+                <div class="user-details">
+                    <p class="label-heading">Location:</p>
+                    <p>Location2</p>
+                </div>
+            </div>
+
+            <div class="header__details-card ms-3 d-none d-xl-flex">
+                <div class="__photo">
+                    <img src="assets/images/icons/icon-facility.svg"  alt="">
+                </div>
+                <div class="user-details">
+                    <p class="label-heading">Facility</p>
+                    <p>Admin</p>
+                </div>
+            </div>
+            <!--Comman Search-->
+            <form action="" class="CommanSearch__form mx-xl-5 mx-4">
+                <label for="" class="CommonSearch__label">
+                    <img src="assets/images/icons/icon-search.svg" alt="">
+                </label>
+                <input class="CommonSearch__input form-control" type="text" placeholder="Search for Mobile Number, National ID, UHID">
+                <button type="reset" class="reset-btn">
+                    <svg width="20" height="20" viewBox="0 0 20 20"><path d="M10 10l5.09-5.09L10 10l5.09 5.09L10 10zm0 0L4.91 4.91 10 10l-5.09 5.09L10 10z" stroke="currentColor" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+                </button>
+            </form>
+
+           
+
+            <div class="header__actions ms-auto">
+                 <!-- Date & Timer -->
+                <div class="date-time">
+                    <span>
+                        <svg width="25" height="28" viewBox="0 0 25 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M20.3123 2.28119H18.7497V1.50013C18.7497 1.06853 18.3999 0.718805 17.9686 0.718805C17.537 0.718805 17.1873 1.06853 17.1873 1.50013V2.28119H7.81245V1.50013C7.81245 1.06853 7.46272 0.718805 7.03112 0.718805C6.59979 0.718805 6.25007 1.06853 6.25007 1.50013V2.28119H4.68742C3.44445 2.28119 2.25217 2.77504 1.37301 3.6542C0.493853 4.53336 0 5.72564 0 6.96861V22.5938C0 23.8367 0.493853 25.029 1.37301 25.9082C2.25217 26.7873 3.44445 27.2812 4.68742 27.2812H20.3126C21.5556 27.2812 22.7478 26.7873 23.627 25.9082C24.5061 25.029 25 23.8367 25 22.5938V6.96861C25 5.72564 24.5061 4.53336 23.627 3.6542C22.7478 2.77504 21.5556 2.28119 20.3126 2.28119H20.3123ZM12.4997 22.5938C10.4278 22.5938 8.44063 21.7706 6.97554 20.3055C5.51046 18.8404 4.68728 16.8532 4.68728 14.7813C4.68728 12.7094 5.51046 10.7222 6.97554 9.25714C8.44063 7.79205 10.4278 6.96887 12.4997 6.96887C14.5716 6.96887 16.5588 7.79205 18.0239 9.25714C19.489 10.7222 20.3122 12.7094 20.3122 14.7813C20.3122 16.8532 19.489 18.8404 18.0239 20.3055C16.5588 21.7706 14.5716 22.5938 12.4997 22.5938V22.5938ZM16.4058 14.7812C16.4058 14.9884 16.3234 15.1869 16.1769 15.3336C16.0305 15.4801 15.8317 15.5623 15.6245 15.5623H12.5005L12.4997 15.5625C12.0684 15.5625 11.7184 15.2125 11.7184 14.7812V10.8748C11.7184 10.4435 12.0684 10.0938 12.4997 10.0938C12.9313 10.0938 13.2811 10.4435 13.2811 10.8751V13.9999H15.6248C16.0561 13.9999 16.4058 14.3496 16.4058 14.7812H16.4058Z" fill="#368796"/>
+                        </svg> 
+                    </span>
+                    <div class="details">
+                        <p>12-AUG-2022</p>
+                        <p>10:24:00 AM</p>
+                    </div>
+                </div>
+                <button>
+                    <img src="assets/images/icons/icon-notify.svg"  alt="">
+                </button>
+                <button>
+                    <img src="assets/images/icons/icon-log-out.svg"  alt="">
+                </button>
+            </div>
+
+
+        </div>
+        <div class="header__menu ms-auto">
+            <button class="" data-bs-toggle="modal" data-bs-target="#mainMenu">
+                <img src="assets/images/icons/icon-menu.svg" alt="">
+            </button>
+        </div>
+    </div>
+</header>
+
+<!--Container-->
+<div class="container__wrapper m-3 ">
+    <div class="page-header">
+        <h2 class="page-heading">Company Grade wise Clinical Conditions</h2>
+        <div class="actions ms-auto">
+              
+            <button class="btn btn-main-outline">Company Documents</button>
+            <button class="btn btn-main-outline">Clear</button>
+            <button class="btn btn-main-outline">Modify</button>
+            <button class="btn btn-main-fill">Save</button>                 
+        </div>
+    </div> 
+
+    <div class="card card-style-1 m-2">
+        <div class="row mx-0 p-2">
+          
+            <div class="col-lg-4 col-md-4">
+                <div class="d-flex align-items-center">
+                    <label for="coverage" class="form-label me-2" >Coverage:</label> <label for="OP" class="form-label me-2" >OP</label>  
+                    <div class="form-check form-switch"><input class="form-check-input" type="checkbox" role="switch" id="coverageswitch" checked></div> <label for="IP" class="form-label me-2" >IP</label>
+                    
+               </div>                                  
+            </div>
+    
+                                         
+                
+            <div class="col-lg-4 col-md-4">
+    
+    
+                <div class="d-flex align-items-center">
+                    <label for="discounttype" class="form-label me-2" >Discount Type:</label> <label for="Open" class="form-label me-2" >Open</label>  
+                    <div class="form-check form-switch"><input class="form-check-input" type="checkbox" role="switch" id="discountswitch" checked></div> <label for="Predefine" class="form-label me-2" >Predefine</label>
+                    
+               </div>    
+                                    
+            </div>
+    
+            <div class="col-lg-4 col-md-4">
+                <div class="d-flex align-items-center">
+                    <label for="discounttype" class="form-label me-2" >Discount:</label> 
+                    <div class="input-group">
+                        <input type="text" class="form-control" placeholder="IP COURTSY DISCOUNT 8 PERCENT" aria-label="discount">
+                        <button class="btn btn-secondary-fill btn-icon" type="button" id="discount">
+                            <img src="assets/images/icons/icon-search.svg" alt="">
+                        </button>
+                      </div>
+                    
+               </div>  
+              
+            </div>
+             
+            <div class="col-lg-3 col-md-4">
+                <label for class="form-label">Discount On </label>
+                <select name="" id="" class="form-select">
+                    <option value="" selected>Item</option>
+                    <option value="">Select 1</option>
+                    <option value="">Select 2</option>
+                </select>
+                
+            
+        
+            </div> 
+            <div class="col-lg-2 col-md-4">
+                <label for class="form-label">Service </label>
+                <select name="" id="" class="form-select">
+                    <option value="" selected>Select</option>
+                    <option value="">Select 1</option>
+                    <option value="">Select 2</option>
+                </select>
+            
+            
+            </div> 
+            <div class="col-lg-3 col-md-4">
+                <label for class="form-label">Department </label>
+                <select name="" id="" class="form-select">
+                    <option value="" selected>Select</option>
+                    <option value="">Select 1</option>
+                    <option value="">Select 2</option>
+                </select>
+            
+            
+        
+            </div> 
+            <div class="col-lg-2 col-md-4">
+                <label for class="form-label">Specialization </label>
+                <select name="" id="" class="form-select">
+                    <option value="" selected>Select</option>
+                    <option value="">Select 1</option>
+                    <option value="">Select 2</option>
+                </select>
+        
+            
+        
+            </div> 
+            <div class="col-lg-2 col-md-4">
+                <div class="input-group">
+                    <label for="" class="form-label">Item</label>
+                    <div class="input-group">
+                        <input type="text" class="form-control" placeholder="Items" aria-label="discount">
+                        <button class="btn btn-secondary-fill btn-icon" type="button" id="discount">
+                            <img src="assets/images/icons/icon-search.svg" alt="">
+                        </button>
+                      </div>
+                  </div>
+        
+            
+        
+            </div> 
+    
+            </div>
+    
+    </div>
+
+       
+    <div class="row mx-0 p-2">
+     
+        <div class="mt-2 p-0">
+            <div class="d-flex align-items-center p-2 m-2 ip_header level_1_bg border-bottom"> 
+                <div class="d-flex align-items-center me-5">
+                    <label for="" class="form-label text-nowrap me-3 mb-0">Clinical Condition Name</label>
+                    <div class="">
+                        <select name="" class="form-select grade_select" id="">
+                            <option value="">Condition Name 1</option>
+                            <option value="">Condition Name 2</option>
+                            <option value="">Condition Name 3</option>
+                            <option value="">Condition Name 4</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="d-flex align-items-center me-5">
+                    <label for="" class="form-label text-nowrap me-3 mb-0">Limit Type</label>
+                    <div class="">
+                        <select name="" class="form-select limit_select" id="">
+                            <option value="">Not Covered</option>
+                            <option value="">No Limit</option>
+                            <option value="">No Limit</option>
+                            <option value="">No Limit</option>
+                        </select>
+                    </div>
+                </div>
+                
+                
+                <button class="btn btn-main-fill">Add</button>
+            </div>
+         
+        <div class="accordion_table m-2">
+            <table class="table border-0 m-0">
+                <tbody>
+                    <tr style="background-color: #f8f8f8;">
+                        <td style="width:2%;"></td>
+                        <td style="width:13%;">Type Name</td>
+                        <td style="width:13%;">Limit Type</td>
+                        <td style="width:13%;">Limit Value</td>
+                        <td style="width:13%;">Furthur Level</td>
+                        <td style="width:13%;"></td>
+                        <td style="width:13%;"></td>
+                    </tr>
+                    <tr class="level_1_bg">
+                        <td  style="width:2%;"></td>
+                        <td  style="width:13%;">1-MAX  SR 100-General</td>
+                        <td  style="width:13%;">Percentage</td>
+                        <td  style="width:13%;">10</td>
+                        <td  style="width:13%;">False</td>
+                        <td  style="width:13%;">
+                            <div class="align-items-center actions position-absolute end-0">
+                                <img class="cursor-pointer mx-2" src="/assets/images/icons/icon-edit.svg" alt="">
+                                <img class="cursor-pointer mx-2" src="/assets/images/icons/icon-trash.svg" alt="">
+                            </div>
+                        </td>
+                        <td  style="width:13%;"></td>
+                    </tr>
+                    <tr class="level_1_bg">
+                        <td style="width:2%;">
+                            <div class="w-100 text-center">
+                                <img data-bs-toggle="collapse" data-bs-target="#sericesAccordion" aria-expanded="false" class="toogle_icon cursor-pointer" src="./assets/images/icons/icon-arrow-up.svg" alt="">
+                            </div>
+                        </td>
+                        <td style="width:13%;">1-MAX  SR 100-General</td>
+                        <td style="width:13%;">Percentage</td>
+                        <td style="width:13%;">10</td>
+                        <td style="width:13%;">False</td>
+                        <td style="width:13%;">
+                            <div class="align-items-center actions position-absolute end-0">
+                                <img class="cursor-pointer mx-2" src="/assets/images/icons/icon-edit.svg" alt="">
+                                <img class="cursor-pointer mx-2" src="/assets/images/icons/icon-trash.svg" alt="">
+                            </div>
+                        </td>
+                        <td style="width:13%;"></td>
+                    </tr>
+                    <tr>
+                        <!-- SERVICES ACCORDION TABLE -->
+                        <td colspan="7" class="p-0">
+                            <div id="sericesAccordion" class="sericesAccordion accordion-collapse collapse">
+                                <div class="d-flex align-items-center p-2 ip_header level_2_bg border-bottom"> 
+                                    <div class="d-flex align-items-center me-5">
+                                        <h6 class="label m-0 fw-bold me-5">Services</h6>
+                                        <div class="">
+                                            <select name="" class="form-select grade_select" id="">
+                                                <option value="">Select Service</option>
+                                                <option value="">Select Service</option>
+                                                <option value="">Select Service</option>
+                                                <option value="">Select Service</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex align-items-center me-5">
+                                        <label for="" class="form-label text-nowrap me-3 mb-0">Limit Type</label>
+                                        <div class="">
+                                            <select name="" class="form-select limit_select" id="">
+                                                <option value="">No Limit</option>
+                                                <option value="">No Limit</option>
+                                                <option value="">No Limit</option>
+                                                <option value="">No Limit</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex align-items-center">
+                                        <label for="" class="form-label text-nowrap me-3 mb-0">Limit Value</label>
+                                        <input type="text" class="form-control w-50" value="0">
+                                    </div>
+                                    <div class="d-flex align-items-center me-5">
+                                        <label for="" class="form-label text-nowrap me-3 mb-0">Furthur Level</label>
+                                        <input type="checkbox" class="form-check-input" value="0">
+                                    </div>
+                                    <button class="btn btn-main-fill">Add</button>
+                                </div>
+                                <table class="table border-0 m-0">
+                                    <tbody>
+                                        <tr style="background-color: #f8f8f8;">
+                                            <td style="width:2%;"></td>
+                                            <td style="width:13%;">Type Name</td>
+                                            <td style="width:13%;">Limit Type</td>
+                                            <td style="width:13%;">Limit Value</td>
+                                            <td style="width:13%;">Furthur Level</td>
+                                            <td style="width:13%;"></td>
+                                            <td style="width:13%;"></td>
+                                        </tr>
+                                        <tr class="level_2_bg">
+                                            <td style="width:2%;"></td>
+                                            <td style="width:13%;">1-MAX  SR 100-General</td>
+                                            <td style="width:13%;">
+                                                <div class="">
+                                                    <select name="" class="form-select" id="">
+                                                        <option value="">Percentage</option>
+                                                        <option value="">Percentage</option>
+                                                        <option value="">Percentage</option>
+                                                        <option value="">Percentage</option>
+                                                    </select>
+                                                </div>
+                                            </td>
+                                            <td style="width:13%;">
+                                                <div class="">
+                                                    <select name="" class="form-select" id="">
+                                                        <option value="">10</option>
+                                                        <option value="">10</option>
+                                                        <option value="">10</option>
+                                                        <option value="">10</option>
+                                                    </select>
+                                                </div>
+                                            </td>
+                                            <td style="width:13%;">
+                                                <div class="d-flex align-items-center me-5">
+                                                    <label for="" class="form-label text-nowrap me-3 mb-0">Furthur Level</label>
+                                                    <input type="checkbox" class="form-check-input" value="0">
+                                                </div>
+                                            </td>
+                                            <td style="width:13%;">
+                                                <div class="align-items-center actions position-absolute end-0">
+                                                    <button class="btn btn-main-fill">Update</button>
+                                                </div>
+                                            </td>
+                                            <td style="width:13%;"></td>
+                                        </tr>
+                                        <tr class="level_2_bg">
+                                            <td style="width:2%;">
+                                                <div class="w-100 text-center">
+                                                    <img data-bs-toggle="collapse" data-bs-target="#departmentAccordion" aria-expanded="false" class="toogle_icon cursor-pointer"  class="cursor-pointer" src="./assets/images/icons/icon-arrow-up.svg" alt="">
+                                                </div>
+                                            </td>
+                                            <td style="width:13%;">1-MAX  SR 100-General</td>
+                                            <td style="width:13%;">Percentage</td>
+                                            <td style="width:13%;">10</td>
+                                            <td style="width:13%;">False</td>
+                                            <td style="width:13%;">
+                                                <div class="align-items-center actions position-absolute end-0">
+                                                    <img class="cursor-pointer mx-2" src="/assets/images/icons/icon-edit.svg" alt="">
+                                                    <img class="cursor-pointer mx-2" src="/assets/images/icons/icon-trash.svg" alt="">
+                                                </div>
+                                            </td>
+                                            <td style="width:13%;"></td>
+                                        </tr>
+                                        <tr>
+                                            <!-- DEPARTMENT ACCORDION -->
+                                            <td colspan="7" class="p-0">
+                                                <div id="departmentAccordion" class="departmentAccordion accordion-collapse collapse">
+                                                    <div class="d-flex align-items-center p-2 ip_header level_3_bg border-bottom"> 
+                                                        <div class="d-flex align-items-center me-5">
+                                                            <h6 class="label m-0 fw-bold me-5 ps-3">Department</h6>
+                                                            <div class="">
+                                                                <select name="" class="form-select grade_select" id="">
+                                                                    <option value="">Select Service</option>
+                                                                    <option value="">Select Service</option>
+                                                                    <option value="">Select Service</option>
+                                                                    <option value="">Select Service</option>
+                                                                </select>
+                                                            </div>
+                                                        </div>
+                                                        <div class="d-flex align-items-center me-5">
+                                                            <label for="" class="form-label text-nowrap me-3 mb-0">Limit Type</label>
+                                                            <div class="">
+                                                                <select name="" class="form-select limit_select" id="">
+                                                                    <option value="">No Limit</option>
+                                                                    <option value="">No Limit</option>
+                                                                    <option value="">No Limit</option>
+                                                                    <option value="">No Limit</option>
+                                                                </select>
+                                                            </div>
+                                                        </div>
+                                                        <div class="d-flex align-items-center">
+                                                            <label for="" class="form-label text-nowrap me-3 mb-0">Limit Value</label>
+                                                            <input type="text" class="form-control w-50" value="0">
+                                                        </div>
+                                                        <div class="d-flex align-items-center me-5">
+                                                            <label for="" class="form-label text-nowrap me-3 mb-0">Furthur Level</label>
+                                                            <input type="checkbox" class="form-check-input" value="0">
+                                                        </div>
+                                                        <button class="btn btn-main-fill">Add</button>
+                                                    </div>
+                                                    <table class="table border-0 m-0">
+                                                        <tbody>
+                                                            <tr style="background-color: #f8f8f8;">
+                                                                <td style="width:2%;"></td>
+                                                                <td style="width:13%;">Type Name</td>
+                                                                <td style="width:13%;">Limit Type</td>
+                                                                <td style="width:13%;">Limit Value</td>
+                                                                <td style="width:13%;">Furthur Level</td>
+                                                                <td style="width:13%;"></td>
+                                                                <td style="width:13%;"></td>
+                                                            </tr>
+                                                            <tr class="level_3_bg">
+                                                                <td style="width:2%;"></td>
+                                                                <td style="width:13%;">1-MAX  SR 100-General</td>
+                                                                <td style="width:13%;">Percentage</td>
+                                                                <td style="width:13%;">10</td>
+                                                                <td style="width:13%;">False</td>
+                                                                <td style="width:13%;">
+                                                                    <div class="align-items-center actions position-absolute end-0">
+                                                                        <img class="cursor-pointer mx-2" src="/assets/images/icons/icon-edit.svg" alt="">
+                                                                        <img class="cursor-pointer mx-2" src="/assets/images/icons/icon-trash.svg" alt="">
+                                                                    </div>
+                                                                </td>
+                                                                <td style="width:13%;"></td>
+                                                            </tr>
+                                                            <tr class="level_3_bg">
+                                                                <td style="width:2%;">
+                                                                    <div class="w-100 text-center">
+                                                                        <img data-bs-toggle="collapse" data-bs-target="#specialiationAccordion" aria-expanded="false" class="toogle_icon cursor-pointer"  class="cursor-pointer" src="./assets/images/icons/icon-arrow-up.svg" alt="">
+                                                                    </div>
+                                                                </td>
+                                                                <td style="width:13%;">1-MAX  SR 100-General</td>
+                                                                <td style="width:13%;">Percentage</td>
+                                                                <td style="width:13%;">10</td>
+                                                                <td style="width:13%;">False</td>
+                                                                <td style="width:13%;">
+                                                                    <div class="align-items-center actions position-absolute end-0">
+                                                                        <img class="cursor-pointer mx-2" src="/assets/images/icons/icon-edit.svg" alt="">
+                                                                        <img class="cursor-pointer mx-2" src="/assets/images/icons/icon-trash.svg" alt="">
+                                                                    </div>
+                                                                </td>
+                                                                <td style="width:13%;"></td>
+                                                            </tr>
+                                                            <tr>
+                                                                <!-- SPECIALIZATION ACCORDION -->
+                                                                <td colspan="7" class="p-0">
+                                                                    <div id="specialiationAccordion" class="specialiationAccordion accordion-collapse collapse">
+                                                                        <div class="d-flex align-items-center p-2 ip_header level_4_bg border-bottom"> 
+                                                                            <div class="d-flex align-items-center me-5">
+                                                                                <h6 class="label m-0 fw-bold ps-4 me-5">Specialization</h6>
+                                                                                <div class="">
+                                                                                    <select name="" class="form-select grade_select" id="">
+                                                                                        <option value="">Select Service</option>
+                                                                                        <option value="">Select Service</option>
+                                                                                        <option value="">Select Service</option>
+                                                                                        <option value="">Select Service</option>
+                                                                                    </select>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="d-flex align-items-center me-5">
+                                                                                <label for="" class="form-label text-nowrap me-3 mb-0">Limit Type</label>
+                                                                                <div class="">
+                                                                                    <select name="" class="form-select limit_select" id="">
+                                                                                        <option value="">No Limit</option>
+                                                                                        <option value="">No Limit</option>
+                                                                                        <option value="">No Limit</option>
+                                                                                        <option value="">No Limit</option>
+                                                                                    </select>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="d-flex align-items-center">
+                                                                                <label for="" class="form-label text-nowrap me-3 mb-0">Limit Value</label>
+                                                                                <input type="text" class="form-control w-50" value="0">
+                                                                            </div>
+                                                                            <div class="d-flex align-items-center me-5">
+                                                                                <label for="" class="form-label text-nowrap me-3 mb-0">Furthur Level</label>
+                                                                                <input type="checkbox" class="form-check-input" value="0">
+                                                                            </div>
+                                                                            <button class="btn btn-main-fill">Add</button>
+                                                                        </div>
+                                                                        <table class="table border-0 m-0">
+                                                                            <tbody>
+                                                                                <tr style="background-color: #f8f8f8;">
+                                                                                    <td style="width:2%;"></td>
+                                                                                    <td style="width:13%;">Type Name</td>
+                                                                                    <td style="width:13%;">Limit Type</td>
+                                                                                    <td style="width:13%;">Limit Value</td>
+                                                                                    <td style="width:13%;">Furthur Level</td>
+                                                                                    <td style="width:13%;"></td>
+                                                                                    <td style="width:13%;"></td>
+                                                                                </tr>
+                                                                                <tr class="level_4_bg">
+                                                                                    <td style="width:2%;"></td>
+                                                                                    <td style="width:13%;">1-MAX  SR 100-General</td>
+                                                                                    <td style="width:13%;">Percentage</td>
+                                                                                    <td style="width:13%;">10</td>
+                                                                                    <td style="width:13%;">False</td>
+                                                                                    <td style="width:13%;">
+                                                                                        <div class="align-items-center actions position-absolute end-0">
+                                                                                            <img class="cursor-pointer mx-2" src="/assets/images/icons/icon-edit.svg" alt="">
+                                                                                            <img class="cursor-pointer mx-2" src="/assets/images/icons/icon-trash.svg" alt="">
+                                                                                        </div>
+                                                                                    </td>
+                                                                                    <td style="width:13%;"></td>
+                                                                                </tr>
+                                                                                <tr class="level_4_bg">
+                                                                                    <td style="width:2%;">
+                                                                                        <div class="w-100 text-center">
+                                                                                            <img data-bs-toggle="collapse" data-bs-target="#itemsAccordion" aria-expanded="fasle" class="toogle_icon cursor-pointer"  class="cursor-pointer" src="./assets/images/icons/icon-arrow-up.svg" alt="">
+                                                                                        </div>
+                                                                                    </td>
+                                                                                    <td style="width:13%;">1-MAX  SR 100-General</td>
+                                                                                    <td style="width:13%;">Percentage</td>
+                                                                                    <td style="width:13%;">10</td>
+                                                                                    <td style="width:13%;">False</td>
+                                                                                    <td style="width:13%;">
+                                                                                        <div class="align-items-center actions position-absolute end-0">
+                                                                                            <img class="cursor-pointer mx-2" src="/assets/images/icons/icon-edit.svg" alt="">
+                                                                                            <img class="cursor-pointer mx-2" src="/assets/images/icons/icon-trash.svg" alt="">
+                                                                                        </div>
+                                                                                    </td>
+                                                                                    <td style="width:13%;"></td>
+                                                                                </tr>
+                                                                                <tr>
+                                                                                    <!-- ITEMS ACCORDION -->
+                                                                                    <td colspan="7" class="p-0">
+                                                                                        <div id="itemsAccordion" class="itemsAccordion accordion-collapse collapse">
+                                                                                            <div class="d-flex align-items-center p-2 ip_header level_5_bg border-bottom"> 
+                                                                                                <div class="d-flex align-items-center me-5">
+                                                                                                    <h6 class="label m-0 fw-bold me-5 ps-5">Items</h6>
+                                                                                                    <div class="">
+                                                                                                        <select name="" class="form-select grade_select" id="">
+                                                                                                            <option value="">Select Service</option>
+                                                                                                            <option value="">Select Service</option>
+                                                                                                            <option value="">Select Service</option>
+                                                                                                            <option value="">Select Service</option>
+                                                                                                        </select>
+                                                                                                    </div>
+                                                                                                </div>
+                                                                                                <div class="d-flex align-items-center me-5">
+                                                                                                    <label for="" class="form-label text-nowrap me-3 mb-0">Limit Type</label>
+                                                                                                    <div class="">
+                                                                                                        <select name="" class="form-select limit_select" id="">
+                                                                                                            <option value="">No Limit</option>
+                                                                                                            <option value="">No Limit</option>
+                                                                                                            <option value="">No Limit</option>
+                                                                                                            <option value="">No Limit</option>
+                                                                                                        </select>
+                                                                                                    </div>
+                                                                                                </div>
+                                                                                                <div class="d-flex align-items-center">
+                                                                                                    <label for="" class="form-label text-nowrap me-3 mb-0">Limit Value</label>
+                                                                                                    <input type="text" class="form-control w-50" value="0">
+                                                                                                </div>
+                                                                                                <div class="d-flex align-items-center me-5">
+                                                                                                    <label for="" class="form-label text-nowrap me-3 mb-0">Furthur Level</label>
+                                                                                                    <input type="checkbox" class="form-check-input" value="0">
+                                                                                                </div>
+                                                                                                <button class="btn btn-main-fill">Add</button>
+                                                                                            </div>
+                                                                                            <table class="table border-0 m-0">
+                                                                                                <tbody>
+                                                                                                    <tr style="background-color: #f8f8f8;">
+                                                                                                        <td style="width:2%;"></td>
+                                                                                                        <td style="width:13%;">Type Name</td>
+                                                                                                        <td style="width:13%;">Limit Type</td>
+                                                                                                        <td style="width:13%;">Limit Value</td>
+                                                                                                        <td style="width:13%;">Furthur Level</td>
+                                                                                                        <td style="width:13%;"></td>
+                                                                                                        <td style="width:13%;"></td>
+                                                                                                    </tr>
+                                                                                                    <tr class="level_5_bg">
+                                                                                                        <td style="width:2%;"></td>
+                                                                                                        <td style="width:13%;">1-MAX  SR 100-General</td>
+                                                                                                        <td style="width:13%;">Percentage</td>
+                                                                                                        <td style="width:13%;">10</td>
+                                                                                                        <td style="width:13%;">False</td>
+                                                                                                        <td style="width:13%;">
+                                                                                                            <div class="align-items-center actions position-absolute end-0">
+                                                                                                                <img class="cursor-pointer mx-2" src="/assets/images/icons/icon-edit.svg" alt="">
+                                                                                                                <img class="cursor-pointer mx-2" src="/assets/images/icons/icon-trash.svg" alt="">
+                                                                                                            </div>
+                                                                                                        </td>
+                                                                                                        <td style="width:13%;"></td>
+                                                                                                    </tr>
+                                                                                                    <tr class="level_5_bg">
+                                                                                                        <td style="width:2%;"></td>
+                                                                                                        <td style="width:13%;">1-MAX  SR 100-General</td>
+                                                                                                        <td style="width:13%;">Percentage</td>
+                                                                                                        <td style="width:13%;">10</td>
+                                                                                                        <td style="width:13%;">False</td>
+                                                                                                        <td style="width:13%;">
+                                                                                                            <div class="align-items-center actions position-absolute end-0">
+                                                                                                                <img class="cursor-pointer mx-2" src="/assets/images/icons/icon-edit.svg" alt="">
+                                                                                                                <img class="cursor-pointer mx-2" src="/assets/images/icons/icon-trash.svg" alt="">
+                                                                                                            </div>
+                                                                                                        </td>
+                                                                                                        <td style="width:13%;"></td>
+                                                                                                    </tr>
+                                                                                                    <tr class="level_5_bg">
+                                                                                                        <td style="width:2%;"></td>
+                                                                                                        <td style="width:13%;">1-MAX  SR 100-General</td>
+                                                                                                        <td style="width:13%;">Percentage</td>
+                                                                                                        <td style="width:13%;">10</td>
+                                                                                                        <td style="width:13%;">False</td>
+                                                                                                        <td style="width:13%;">
+                                                                                                            <div class="align-items-center actions position-absolute end-0">
+                                                                                                                <img class="cursor-pointer mx-2" src="/assets/images/icons/icon-edit.svg" alt="">
+                                                                                                                <img class="cursor-pointer mx-2" src="/assets/images/icons/icon-trash.svg" alt="">
+                                                                                                            </div>
+                                                                                                        </td>
+                                                                                                        <td style="width:13%;"></td>
+                                                                                                    </tr>
+                                                                                                </tbody>
+                                                                                            </table> 
+                                                                                        </div>
+                                                                                    </td>
+                                                                                </tr>
+                                                                                <tr class="level_4_bg">
+                                                                                    <td style="width:2%;"></td>
+                                                                                    <td style="width:13%;">1-MAX  SR 100-General</td>
+                                                                                    <td style="width:13%;">Percentage</td>
+                                                                                    <td style="width:13%;">10</td>
+                                                                                    <td style="width:13%;">False</td>
+                                                                                    <td style="width:13%;">
+                                                                                        <div class="align-items-center actions position-absolute end-0">
+                                                                                            <img class="cursor-pointer mx-2" src="/assets/images/icons/icon-edit.svg" alt="">
+                                                                                            <img class="cursor-pointer mx-2" src="/assets/images/icons/icon-trash.svg" alt="">
+                                                                                        </div>
+                                                                                    </td>
+                                                                                    <td style="width:13%;"></td>
+                                                                                </tr>
+                                                                            </tbody>
+                                                                        </table> 
+                                                                    </div>
+                                                                </td>
+                                                            </tr>
+                                                            <tr class="level_3_bg">
+                                                                <td style="width:2%;"></td>
+                                                                <td style="width:13%;">1-MAX  SR 100-General</td>
+                                                                <td style="width:13%;">Percentage</td>
+                                                                <td style="width:13%;">10</td>
+                                                                <td style="width:13%;">False</td>
+                                                                <td style="width:13%;">
+                                                                    <div class="align-items-center actions position-absolute end-0">
+                                                                        <img class="cursor-pointer mx-2" src="/assets/images/icons/icon-edit.svg" alt="">
+                                                                        <img class="cursor-pointer mx-2" src="/assets/images/icons/icon-trash.svg" alt="">
+                                                                    </div>
+                                                                </td>
+                                                                <td style="width:13%;"></td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table> 
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr class="level_2_bg">
+                                            <td style="width:2%;"></td>
+                                            <td style="width:13%;">1-MAX  SR 100-General</td>
+                                            <td style="width:13%;">Percentage</td>
+                                            <td style="width:13%;">10</td>
+                                            <td style="width:13%;">False</td>
+                                            <td style="width:13%;">
+                                                <div class="align-items-center actions position-absolute end-0">
+                                                    <img class="cursor-pointer mx-2" src="/assets/images/icons/icon-edit.svg" alt="">
+                                                    <img class="cursor-pointer mx-2" src="/assets/images/icons/icon-trash.svg" alt="">
+                                                </div>
+                                            </td>
+                                            <td style="width:13%;"></td>
+                                        </tr>
+                                    </tbody>
+                                </table> 
+                            </div>
+                        </td>
+                    </tr>
+                    <tr class="level_1_bg">
+                        <td style="width:2%;"></td>
+                        <td style="width:13%;">1-MAX  SR 100-General<image.png/td>
+                        <td style="width:13%;">Percentage</td>
+                        <td style="width:13%;">10</td>
+                        <td style="width:13%;">False</td>
+                        <td style="width:13%;">
+                            <div class="align-items-center actions position-absolute end-0">
+                                <img class="cursor-pointer mx-2" src="/assets/images/icons/icon-edit.svg" alt="">
+                                <img class="cursor-pointer mx-2" src="/assets/images/icons/icon-trash.svg" alt="">
+                            </div>
+                        </td>
+                        <td style="width:13%;"></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+       
+            
+    </div>
+    </div> 
+    
+
+        </div>
+<!--Javascript-->
+<script src="assets/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

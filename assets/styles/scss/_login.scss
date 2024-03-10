@@ -1,0 +1,58 @@
+.login_bg{
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+    background-image: url(/assets/images/login/BG.png);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .login_box{
+        border-radius: 15px;
+        box-shadow: 0px 4px 4px rgb(0 0 0 / 25%);
+        border: 1px solid #AFE7F6;
+        padding: 3rem;
+        width: 500px;
+        margin: 0 auto;
+        background: linear-gradient(113.6deg, rgba(206, 238, 236, 0.7) 9.77%, rgba(138, 228, 246, 0.7) 33.35%, rgba(219, 251, 249, 0.7) 64.36%, rgba(185, 225, 242, 0.7) 93.62%);
+        .ahh_logo{
+            text-align: center;
+        }
+        label{
+            font-size: 0.875rem;
+            color: #808080;
+            font-weight: 600;
+        }
+        .input_container{
+            position: relative;
+            display: flex;
+            align-items: center;
+            img{
+                position: absolute;
+                left: 10px;
+            }
+            input{
+                border: 1px solid #C7C7C7;
+                border-radius: 5px;
+                padding: 15px;
+                padding-left: 40px;
+            }
+            select{
+                border: 1px solid #C7C7C7;
+                border-radius: 5px;
+                padding: 15px;
+                padding-left: 40px;
+            }
+        }
+        .sign_btn{
+            background: #6677CC;
+            border-radius: 40px;
+            padding: 1rem;
+            color: #fff;
+            width: 100%;
+            margin-top: 2rem;
+        }
+    }
+}

@@ -1,0 +1,228 @@
+.bed-board{
+    border:1px solid #ACD5EC;
+    border-radius: 0.5rem;
+    background-color: #fff;
+    max-height: 22rem;
+    overflow: auto;
+    //BED Details
+    .bed-details{
+        overflow: hidden;
+        position: relative;
+        height: 100%;
+        .bed-board-strip{
+            position:absolute;
+            left:-0.25rem;
+            top:-0.25rem;
+            svg{
+                path{
+                    fill:#0885CA;
+                }
+            }
+        }
+        //Alergy Icon
+        .alergy-icon{
+            position:absolute;
+            right:0.5rem;
+            top:0.5rem;
+            width:2.25rem;
+            height: 2.25rem;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #E9F5F7;
+            box-shadow: 0px 0px 1px #C0E6E4, inset 0px 0px 4px #8BCED8;
+        }
+        //Bed Info
+        .bed-info{
+            margin-top:2.5rem;
+           text-align: center;
+           .bed-icon{
+            background: #ECF6F8;
+            border: 1px solid #DAEDF1;
+            position: relative;
+            border-radius: 50%;
+            width:7rem;
+            height: 7rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-left: auto;
+            margin-right: auto;
+            &::before{
+            position:absolute;
+            content:' ';
+            width:5.75rem;
+            height: 5.75rem;
+            border-radius: 50%;
+            background-color: #DAEEF1;
+            left:50%;
+            top:50%;
+            transform: translate( -50%, -50%);
+            z-index: 0;
+            }
+            svg{
+                position: relative;
+            }
+           }
+           //Bed Info Label
+           .bed-info-label{
+            position: relative;
+            background: #8ECBD7;
+            box-shadow: 0px 5px 8px -2px rgba(88, 142, 152, 0.7);
+            border-radius: 4rem;
+            color: #286571;
+            margin-left: auto;
+            margin-right: auto;
+            z-index: 99;
+            width: 80%;
+            padding-top:0.25rem;
+            padding-bottom: 0.25rem;
+            margin-top:-1.5rem;
+           }
+        }
+        //Bed Number
+        .bed-number{
+         background: #ECF6F8;
+         border: 1px solid #DAEDF1;
+         padding:0.75rem;
+         margin-top:1.25rem;
+         text-align: center;
+         color: #368796;
+         font-size: 1.25rem;
+        }
+        //Bed Tasks Info
+        .bed-tasks-info{
+            display: flex;
+            padding:0.5rem;
+            gap:0.5rem;
+            .task-info{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background: #E3F7F4;
+                border: 1px solid #50D0BC;
+                border-radius: 0.25rem;
+                color: #35B6A2;
+                font-size:1.5rem;
+                font-weight: 600;
+                flex:1;
+            }
+        }
+    }
+    //Patient Details
+    .patient-details{
+        box-shadow: inset 4px 0px 4px -3px rgba(79, 69, 69, 0.25);
+        border-radius: 0px 8px 8px 0px;
+        padding:0.5rem;
+        height: 100%;
+        overflow-y: scroll;
+        .patient-details-wrapper{
+            background: #FBFDFE;
+            border: 1px solid #B4DCE4;
+            box-shadow: inset 0px 0px 14px #B7DFE6;
+            border-radius: 0.75rem;
+            padding:0.5rem;
+            height: 100%;
+            p{
+                margin:0;
+                font-size:0.75rem;
+                color:#234e51;
+                &.label{
+                    color: #357D83;
+                    margin-bottom:0.25rem;
+                    font-size: 0.75rem;
+                    font-weight: 500;
+                }
+            }
+        }
+    }
+    &.bed-board-occupied{
+        border:1px solid #ACD5EC;
+    }
+    .actions{
+        overflow-y: scroll;
+        display: flex;
+        flex-direction: column;
+        max-height: 20rem;
+        padding:0.5rem;
+        padding-left:0;
+        gap:0.125rem;
+        &::-webkit-scrollbar {
+            width: 0.125rem;
+          }
+          
+          /* Track */
+         &::-webkit-scrollbar-track {
+            background: $primary-100; 
+            border-radius: 0.25rem;
+            margin-top:0.5rem;
+            margin-bottom:0.5rem;
+          }
+           
+          /* Handle */
+          &::-webkit-scrollbar-thumb {
+            background: $primary-400; 
+            border-radius: 0.5rem;
+          }
+          
+          /* Handle on hover */
+          &::-webkit-scrollbar-thumb:hover {
+            background: $primary-400; 
+          }
+        .btn{
+            position: relative;
+            background: linear-gradient(180deg, #FAFFFE 0%, #E5F3F0 100%);
+            border-radius: 0.5rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 100%;
+            font-size: 0.75rem;
+            font-weight: 500;
+            text-align: center;
+            border:1px solid #61BEC5;
+            min-height: 3.25rem;
+            justify-content: center;
+            svg{
+                z-index:1;
+            }
+            p{
+                background: linear-gradient(180deg, #61BEC5 0%, #357D83 100%);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+                background-clip: text;
+                margin:0;
+                margin-top:0.25rem;
+                z-index:1;
+                font-size: 0.75rem;
+                line-height: 1.5;
+                // text-fill-color: transparent;
+            }
+            &::before{
+                content:'';
+                position:absolute;
+                width:calc(100% - 0.25rem);
+                top:0.25rem;
+                height: 55%;
+                background: linear-gradient(207.26deg, #EDF7F5 13.34%, rgba(255, 255, 255, 0.8) 83%);
+                border-radius: 0.4rem;
+                opacity: 0.8;
+            }
+            &.btn-style-2{
+                background: linear-gradient(180deg, #FCFCFC 0%, #ECECEC 100%);
+                border-color: #B2B2B2;
+                p{
+                    background: linear-gradient(180deg, #808080 0%, #4D4D4D 100%) !important;
+                    -webkit-background-clip: text !important;
+                    -webkit-text-fill-color: transparent !important;
+                    background-clip: text !important;
+                }
+                &::before{
+                    background: linear-gradient(207.26deg, #F1F3F3 13.34%, rgba(255, 255, 255, 0.8) 83%);
+                    opacity: 0.9;
+                }
+            }
+        }
+    }
+}
