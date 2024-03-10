@@ -1,0 +1,859 @@
+<!DOCTYPE html>
+<html lang="Arabic" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/styles/bootstrap.min.css">
+    <!-- <link rel="stylesheet" href="assets/styles/bootstrap.rtl.min.css"> -->
+    <link rel="stylesheet" href="assets/styles/style-EN.css">
+    <!-- <link rel="stylesheet" href="assets/styles/style-AR.css"> -->
+    <title>Employees</title>
+</head>
+<body>
+<header class="header sticky-top">
+    <div class="header__wrapper">
+        <div class="header__hospital-logo">
+            <img src="assets/images/AHH-Logo.png" alt="Al Hammadi Hospital">
+        </div>
+        <div class="header__container">
+            <div class="header__details-card">
+                <div class="__photo user-photo">
+                    <img src="assets/images/user-photo.png" class="" alt="">
+                </div>
+                <div class="user-details">
+                    <p class="label-heading">3000</p>
+                    <p>Admin</p>
+                </div>
+            </div>
+
+            <div class="header__details-card ms-4 d-none d-lg-flex">
+                <div class="__photo">
+                    <img src="assets/images/icons/icon-loaction.svg" alt="">
+                </div>
+                <div class="user-details">
+                    <p class="label-heading">Location:</p>
+                    <p>Location2</p>
+                </div>
+            </div>
+
+            <div class="header__details-card ms-3 d-none d-xl-flex">
+                <div class="__photo">
+                    <img src="assets/images/icons/icon-facility.svg"  alt="">
+                </div>
+                <div class="user-details">
+                    <p class="label-heading">Facility</p>
+                    <p>Admin</p>
+                </div>
+            </div>
+            <!--Comman Search-->
+            <form action="" class="CommanSearch__form mx-xl-5 mx-4">
+                <label for="" class="CommonSearch__label">
+                    <img src="assets/images/icons/icon-search.svg" alt="">
+                </label>
+                <input class="CommonSearch__input form-control" type="text" placeholder="Search for Mobile Number, National ID, UHID">
+                <button type="reset" class="reset-btn">
+                    <svg width="20" height="20" viewBox="0 0 20 20"><path d="M10 10l5.09-5.09L10 10l5.09 5.09L10 10zm0 0L4.91 4.91 10 10l-5.09 5.09L10 10z" stroke="currentColor" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+                </button>
+            </form>
+
+           
+
+            <div class="header__actions ms-auto">
+                 <!-- Date & Timer -->
+                <div class="date-time">
+                    <span>
+                        <svg width="25" height="28" viewBox="0 0 25 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M20.3123 2.28119H18.7497V1.50013C18.7497 1.06853 18.3999 0.718805 17.9686 0.718805C17.537 0.718805 17.1873 1.06853 17.1873 1.50013V2.28119H7.81245V1.50013C7.81245 1.06853 7.46272 0.718805 7.03112 0.718805C6.59979 0.718805 6.25007 1.06853 6.25007 1.50013V2.28119H4.68742C3.44445 2.28119 2.25217 2.77504 1.37301 3.6542C0.493853 4.53336 0 5.72564 0 6.96861V22.5938C0 23.8367 0.493853 25.029 1.37301 25.9082C2.25217 26.7873 3.44445 27.2812 4.68742 27.2812H20.3126C21.5556 27.2812 22.7478 26.7873 23.627 25.9082C24.5061 25.029 25 23.8367 25 22.5938V6.96861C25 5.72564 24.5061 4.53336 23.627 3.6542C22.7478 2.77504 21.5556 2.28119 20.3126 2.28119H20.3123ZM12.4997 22.5938C10.4278 22.5938 8.44063 21.7706 6.97554 20.3055C5.51046 18.8404 4.68728 16.8532 4.68728 14.7813C4.68728 12.7094 5.51046 10.7222 6.97554 9.25714C8.44063 7.79205 10.4278 6.96887 12.4997 6.96887C14.5716 6.96887 16.5588 7.79205 18.0239 9.25714C19.489 10.7222 20.3122 12.7094 20.3122 14.7813C20.3122 16.8532 19.489 18.8404 18.0239 20.3055C16.5588 21.7706 14.5716 22.5938 12.4997 22.5938V22.5938ZM16.4058 14.7812C16.4058 14.9884 16.3234 15.1869 16.1769 15.3336C16.0305 15.4801 15.8317 15.5623 15.6245 15.5623H12.5005L12.4997 15.5625C12.0684 15.5625 11.7184 15.2125 11.7184 14.7812V10.8748C11.7184 10.4435 12.0684 10.0938 12.4997 10.0938C12.9313 10.0938 13.2811 10.4435 13.2811 10.8751V13.9999H15.6248C16.0561 13.9999 16.4058 14.3496 16.4058 14.7812H16.4058Z" fill="#368796"/>
+                        </svg> 
+                    </span>
+                    <div class="details">
+                        <p>12-AUG-2022</p>
+                        <p>10:24:00 AM</p>
+                    </div>
+                </div>
+                <button>
+                    <img src="assets/images/icons/icon-notify.svg"  alt="">
+                </button>
+                <button>
+                    <img src="assets/images/icons/icon-log-out.svg"  alt="">
+                </button>
+            </div>
+
+
+        </div>
+        <div class="header__menu ms-auto">
+            <button class="" data-bs-toggle="modal" data-bs-target="#mainMenu">
+                <img src="assets/images/icons/icon-menu.svg" alt="">
+            </button>
+        </div>
+    </div>
+</header>
+
+<!--Container-->
+<div class="container__wrapper m-3 ">
+             <div class="page-header sticky-top">
+                <h2 class="page-heading">Employees</h2>
+                <div class="actions ms-auto">
+                    
+                        <input class="form-check-input" type="checkbox" value="" id="blockeduser">
+                        <label class="form-check-label" for="blockeduser">
+                          Blocked User
+                        </label>
+                      
+                      <input class="form-check-input" type="checkbox" value="" id="blockedemployee">
+                        <label class="form-check-label" for="blockedemployee">
+                          Blocked Employee
+                        </label>
+                      
+                    <button class="btn btn-main-outline">Map Location</button>
+                    <button class="btn btn-main-outline">Clear</button>                    <button class="btn btn-main-outline">Modify</button>
+                    <button class="btn btn-main-fill" data-bs-toggle="modal" data-bs-target="#saveMessage">Save</button>
+                </div>
+            </div>
+        <div class="row">
+            <div class="col-xl-2">
+                <div class="regist__wrapper">
+                    <div class="patient__details">
+                        <div class="patient__profile">
+                            <!-- VIP Badge -->
+                            <!-- <div class="vip__badge">
+                                <img src="assets/images/icons/VIP-crown-fill.svg" alt="">
+                            </div> -->
+                            <div class="patient__photo">
+                                <img src="assets/images/patient-dp.png" alt="">
+                            </div>
+                            
+                        </div>
+                        <div class="patient__info">
+                            <div class="file__upload">
+                                <input type="file" class="input-file-upload">
+                            </div> 
+                            <button class="btn btn-main-outline">Signature</button>
+                           <div class="pt-2"><label class="form-check-label px-2 switch2" for="FullTime">
+                                                  Full Time</label><label class="switch">
+                                <input type="checkbox" checked>
+                                <span class="slider round"></span>
+                           </label></div>                  
+                            </div>
+                     </div>
+                    <nav id="navbar-example2" class="navbar px-2 pt-3">
+                        <ul class="nav nav-pills">
+                            <li class="nav-item">
+                                <a class="nav-link" href="#personal-information">
+                                <!--<img src="assets/images/icons/icon-personal.svg" alt="">-->
+                                <span>Personal information</span>    
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#hr-profile">
+                                    <!--<img src="assets/images/icons/icon-address.svg" alt="">-->
+                                    <span>HR Profile</span>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a  class="nav-link" href="#academic-details">
+                                    <!--<img src="assets/images/icons/icon-company.svg" alt="">-->
+                                    <span>Academic Details</span>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#contact-details">
+                                    <!--<img src="assets/images/icons/icon-address.svg" alt="">-->
+                                    <span>Contact Details</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+
+
+
+
+            <div class="col-xl-10 container-fluid" id="personal-information">
+                <div class="card card-style-1 border-right-radius-10 m-2">
+                    <div class="card-header">
+                        <h3 class="heading">Personal Information</h3>
+                        
+                        </div>
+                    
+                    <div class="card-body p-2">
+                        <div class="row p-2">
+                            <div class="col-lg-6 col-md-8">
+                                
+                                <label for class="form-label">Employee No.</label>
+                                        <div class="input-group">
+                                            <input type="text" class="form-control" placeholder="Search" aria-label="Country Name">
+                                            <button class="btn btn-secondary-fill btn-icon" type="button" id="button-addon2">
+                                                <img src="assets/images/icons/icon-search.svg" alt="">
+                                            </button>
+                                          </div>
+                                    
+                                
+                            </div>
+                            <div class="col-lg-3 col-md-4">
+                                <label for class="form-label">Employee Code</label>
+                                <input type="text" class="form-control" placeholder="Code">
+                            </div>
+                            <div class="col-lg-3 col-md-4">
+                                <label for="" class="form-label">Room No.</label>
+                                <input type="text" class="form-control" placeholder="Room No.">
+                            </div>
+                            <div class="card card-style-1 my-2">
+                                
+                                <div class="card-body p-0">
+                                    <div class="row p-2">
+                        
+                                        <div class="col-lg-2 col-md-4">
+                                            <label for="" class="form-label">Title</label>
+                                                        <select class="form-select">
+                                                            <option value="" selected>Select Title</option>
+                                                            <option value="1">Mr.</option>
+                                                            <option value="2">Mrs.</option>
+                                                        </select>
+                                        </div>
+                                        <div class="col-lg-3 col-md-4">
+                                            <label for="" class="form-label" required>First Name</label>
+                                                        <input type="text" class="form-control" placeholder="First Name">
+                                                        <span class="form-info-text">First Name in Arabic</span>
+                                        </div>
+                                        <div class="col-lg-3 col-md-4">
+                                            <label for="" class="form-label" required>Middle Name</label>
+                                            <input type="text" class="form-control" placeholder="Middle Name">
+                                            <span class="form-info-text">Middle Name in Arabic</span>
+                                        </div> 
+                                        <div class="col-lg-3 col-md-4">
+                                            <label for="" class="form-label" required>Last Name</label>
+                                            <input type="text" class="form-control" placeholder="Last Name">
+                                            <span class="form-info-text">Last Name in Arabic</span>
+                                        </div>   
+                                    
+                                                                       
+                            </div>
+                        </div>
+                        
+                        
+                        
+                        
+
+                                     
+
+
+                                </div>
+                            </div>
+                        
+                    </div>
+
+                                 <div class="row py-2 gx-3 gy-2 p-2">
+                    <div class="col-lg-3 col-md-4">
+                        <label for="" class="form-label" required>Date of Birth</label>
+                        <input type="date" class="form-control" placeholder="Validity">
+                    </div>
+                    <div class="col-lg-3 col-md-4">
+                        <label for="" class="form-label" required>Age</label>
+                        <div class="input-group">
+                             <input type="text" class="form-control" placeholder="24 years" required>
+                          </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4">
+                        <label for="" class="form-label" required>Gender</label>
+                        <select name="" id="" class="form-select">
+                            <option value="" selected>Select</option>
+                            <option value="">Male</option>
+                            <option value="">Female</option>
+                        </select>
+                    </div>
+                    <div class="col-lg-3 col-md-4">
+                        <label for="" class="form-label" required>Marital Status</label>
+                        <select name="" id="" class="form-select">
+                            <option value="" selected>Select</option>
+                            <option value="">Single</option>
+                            <option value="">Married</option>
+                        </select>
+                    </div>
+                    <div class="col-lg-3 col-md-4">
+                        <label for="" class="form-label" required>Employee Type</label>
+                        <select name="" id="" class="form-select">
+                            <option value="" selected>Select</option>
+                            <option value=""></option>
+                            <option value=""></option>
+                        </select>
+                    </div>
+                    <div class="col-lg-3 col-md-4">
+                        <label for="" class="form-label" required>Location</label>
+                        <select name="" id="" class="form-select">
+                            <option value="" selected>Select</option>
+                            <option value=""></option>
+                            <option value=""></option>
+                        </select>
+                    </div>
+                    <div class="col-lg-3 col-md-4">
+                        <label for="" class="form-label" required>Department</label>
+                        <select name="" id="" class="form-select">
+                            <option value="" selected>Select</option>
+                            <option value=""></option>
+                            <option value=""></option>
+                        </select>
+                    </div>
+                    <div class="col-lg-3 col-md-4">
+                        <label for="" class="form-label" required>Designation</label>
+                        <select name="" id="" class="form-select">
+                            <option value="" selected>Select</option>
+                            <option value=""></option>
+                            <option value=""></option>
+                        </select>
+                    </div>
+                    
+                </div>
+
+
+<div class="row gx-2">
+    <div class="col-md-4">
+        <div class="card card-style-1 m-2">
+            <div class="p-2">
+            <label for="" class="form-label" required>Region:</label>
+            <div class="input-group">
+                <input type="text" class="form-control" placeholder="Search" aria-label="Country Name">
+                <button class="btn btn-secondary-fill btn-icon" type="button" id="button-addon2">
+                    <img src="assets/images/icons/icon-search.svg" alt="">
+                </button>
+              </div>
+              <label for="" class="form-label" required="">Nationality:</label>
+            <div class="input-group">
+                <input type="text" class="form-control" placeholder="Search" aria-label="Country Name">
+                <button class="btn btn-secondary-fill btn-icon" type="button" id="button-addon2">
+                    <img src="assets/images/icons/icon-search.svg" alt="">
+                </button>
+              </div>
+              </div>
+              <div class="card-header"><h3 class="heading">Languages</h3> 
+              </div> 
+              <div class="p-2">
+              <label for="" class="form-label" required="">Languages Known:</label>
+            <div class="input-group">
+                <input type="text" class="form-control" placeholder="Search" aria-label="Country Name">
+                <button class="btn btn-secondary-fill btn-icon" type="button" id="button-addon2">
+                    <img src="assets/images/icons/icon-search.svg" alt="">
+                </button></div>
+              </div>
+              <div class="actions1 p-2">
+              <button class="btn btn-main-outline">Arabic <img src="assets/images/icons/icon-cross.svg" alt=""></button>
+                    <button class="btn btn-main-outline">English <img src="assets/images/icons/icon-cross.svg" alt=""></button><button class="btn btn-main-outline">Hindi<img src="assets/images/icons/icon-cross.svg" alt=""></button>
+                    <button class="btn btn-main-outline">French <img src="assets/images/icons/icon-cross.svg" alt=""></button>
+            </div>
+            </div>
+         
+    </div>
+
+    <div class="col-md-8">
+        
+        <div class="card card-style-1 m-2">
+            <div class="row py-2 gx-3 gy-2 p-1">
+                
+                <div class="col-lg-6 col-md-6">
+                    <label for="" class="form-label" required>UHID</label>
+                    <input type="text" class="form-control" placeholder="UHID">
+                </div>
+                <div class="col-lg-6 col-md-6">
+                    <label for="" class="form-label" required>SSN</label>
+                    <div class="input-group">
+                         <input type="text" class="form-control" placeholder="SSN No.">
+                      </div>
+                </div>
+                <div class="col-lg-6 col-md-6">
+                    
+                        <label for="" class="form-label" required>Iqama Expiry</label>
+                        <input type="date" class="form-control" placeholder="IqamaExpiry">
+                    
+                </div>
+                <div class="col-lg-6 col-md-6">
+                    <label for="" class="form-label" required>Department</label>
+                    <select name="" id="" class="form-select">
+                        <option value="" selected>Select</option>
+                        <option value="">Single</option>
+                        <option value="">Married</option>
+                    </select>
+                </div>
+                </div>
+         <div class="card-header"><h3 class="heading">Passport Details</h3></div>  
+         <div class="row py-2 gx-3 gy-2 p-1">
+                
+            <div class="col-lg-4 col-md-4">
+                <label for="" class="form-label" required>Passport Number</label>
+                <input type="text" class="form-control" placeholder="Passport Number">
+            </div>
+            <div class="col-lg-4 col-md-4">
+                
+                <label for="" class="form-label" required>Issue Date</label>
+                <input type="date" class="form-control" placeholder="Issue Date">
+            
+        </div>
+            <div class="col-lg-4 col-md-4">
+             <label for="" class="form-label" required>Expiry Date</label>
+            <input type="date" class="form-control" placeholder="Expiry Date">
+                
+            </div>
+            <div class="col-lg-4 col-md-4">
+                <label for="" class="form-label" required>Issued at</label>
+                <input type="text" class="form-control" placeholder="Issued at">
+            </div>
+            <div class="col-lg-4 col-md-4">
+                <label for="" class="form-label" required>Pan Number</label>
+                <input type="text" class="form-control" placeholder="Pan Number">
+            </div>
+            </div>    
+            </div>
+        
+    </div>
+    
+    
+    
+    
+    </div>
+
+</div>
+
+
+
+
+<!--Hr profile start here-->
+<div class="card card-style-1 border-right-radius-10 m-2" id="hr-profile">
+        <div class="card-header">
+            <h3 class="heading">HR profile | Qualification</h3>
+            
+            </div>
+        
+        
+
+        <div class="row py-2 gx-2 gy-2 p-2">
+        
+        
+               <div class="col-lg-2 col-md-2">
+            <label for="" class="form-label" required>Qualification</label>
+            <select name="" id="" class="form-select">
+                <option value="" selected>Select</option>
+                <option value="">Male</option>
+                <option value="">Female</option>
+            </select>
+            
+        </div>
+        
+        <div class="col-lg-2 col-md-2">
+            <label for="" class="form-label" required>Institute</label>
+            <input type="text" class="form-control" placeholder="Institute">
+        </div>
+        <div class="col-lg-4 col-md-4">
+            <label for="" class="form-label" required>Board and University</label>
+            <input type="text" class="form-control" placeholder="University Name">
+        </div>
+        <div class="col-lg-2 col-md-2">
+            <label for="" class="form-label" required>YOP</label>
+            <select name="" id="" class="form-select">
+                <option value="" selected>Select</option>
+                <option value=""></option>
+                <option value=""></option>
+            </select>
+
+        </div>
+        <div class="col-lg-2 col-md-2"> <label for="" class="form-label" required></label><div class="actions ms-auto"><button class="btn btn-main-outline">Add</button></div></div>
+        
+    </div>
+
+    <div class="card card-style-3 border-right-radius-100 m-2"><div class="table-responsive py-3">
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>Sl No.</th>
+                    <th>Qualification</th>
+                    <th>Institute</th>
+                    <th>Board and University</th>
+                    <th>YOP</th>
+                    <th>Action</th>
+                     </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                    1.
+                    </td>
+                    <td>
+                        Qualification
+                    </td>
+                    <td>Institute Name</td>
+                    <td>Board and University</td>
+                    <td>1998</td>
+                    <td><button type="button" id="delete">
+                        <img src="assets/images/icons/icon-delete.svg" alt="">
+                    </button><button  type="button" id="edit">
+                        <img src="assets/images/icons/icon-edit.svg" alt="">
+                    </button></td>
+                     </tr>
+                   </tbody>
+        </table></div>
+    </div>
+    <div class="card-header"><h3 class="heading">HR Profile | Certification Details</h3> 
+        </div>
+        <div class="row py-2 gx-2 gy-2 p-2">
+        
+        
+            <div class="col-lg-3 col-md-3">
+         <label for="" class="form-label" required>Certificate</label>
+         <select name="" id="" class="form-select">
+             <option value="" selected>Select</option>
+             <option value=""></option>
+             <option value=""></option>
+         </select>
+     </div>
+     
+     <div class="col-lg-3 col-md-3">
+         <label for="" class="form-label" required>Institute</label>
+         <input type="text" class="form-control" placeholder="Institute">
+     </div>
+     <div class="col-lg-3 col-md-3">
+         <label for="" class="form-label" required>Issue Date</label>
+         <select name="" id="" class="form-select">
+             <option value="" selected>Select</option>
+             <option value=""></option>
+             <option value=""></option>
+         </select>
+
+     </div>
+     <div class="col-lg-3 col-md-3"> <label for="" class="form-label" required></label><div class="actions ms-auto"><button class="btn btn-main-outline">Add</button></div></div>
+    </div>
+
+ <div class="card card-style-3 border-right-radius-100 m-2"><div class="table-responsive py-3">
+     <table class="table">
+         <thead>
+             <tr>
+                 <th>Sl No.</th>
+                 <th>Certificate</th>
+                 <th>Institute</th>
+                 <th>Issue Date</th>
+                 <th>Action</th>
+                  </tr>
+         </thead>
+         <tbody>
+             <tr>
+                 <td>
+                 1.
+                 </td>
+                 <td>
+                     Certificate
+                 </td>
+                 <td>Institute Name</td>
+                 <td>12th July 2022</td>
+                 <td><button type="button" id="delete">
+                     <img src="assets/images/icons/icon-delete.svg" alt="">
+                 </button><button  type="button" id="edit">
+                     <img src="assets/images/icons/icon-edit.svg" alt="">
+                 </button></td>
+                  </tr>
+                </tbody>
+     </table></div>
+ </div>
+
+
+
+
+
+
+
+
+
+
+    </div> 
+
+<!--academic details-->
+
+<div class="card card-style-1 border-right-radius-10 m-2" id="academic-details">
+    <div class="card-header">
+        <h3 class="heading">Academic Details</h3>
+        </div>
+
+<div class="row m-2">
+
+<div class="col-md-4 px-0 py-0 ">
+
+    <div class="card card-style-1 border-right-radius-10 m-2">
+            <div class="row py-2 px-2">
+        <label for="" class="form-label">Function Type</label>
+        <div class="col-lg-12">
+            <select name="" id="" class="form-select">
+                <option value="" selected>Select</option>
+                <option value=""></option>
+                <option value=""></option>
+            </select>
+        </div>  
+        <label for="" class="form-label">Special Note</label>
+        <div class="col-lg-12">
+            <textarea class="form-control" id="specialnote" rows="3"></textarea>
+        </div>    
+        
+
+
+             
+               
+    </div>    
+    </div>
+    
+</div>
+
+<div class="col-md-4 px-0 py-0">
+
+    <div class="card card-style-1 border-right-radius-10 m-2">
+        <div class="row py-2 px-2">
+        
+        <div class="col-lg-12">
+            <label for="" class="form-label">HR Profile</label>
+                <div class="input-group">
+                <input type="text" class="form-control" placeholder="Search" aria-label="Hrprofile">
+                <button class="btn btn-secondary-fill btn-icon" type="button" id="Hrprofile">
+                    <img src="assets/images/icons/icon-search.svg" alt="">
+                </button>
+              
+            </div>
+            <div class="col-lg-12">
+            <button class="btn btn-main-outline actions">Profile Details <img src="assets/images/icons/icon-cross.svg" alt=""></button></div>
+
+        </div>     
+                
+    </div>    
+    </div>
+    
+</div>
+<div class="col-md-4 px-0 py-0">
+
+    <div class="card card-style-1 border-right-radius-10 m-2">
+        <div class="row py-2 px-2">
+        
+        <div class="col-lg-12">
+            <label for="" class="form-label">Specialisation</label>
+                <div class="input-group">
+                <input type="text" class="form-control" placeholder="Search" aria-label="Specialisation">
+                <button class="btn btn-secondary-fill btn-icon" type="button" id="specialisation">
+                    <img src="assets/images/icons/icon-search.svg" alt="">
+                </button>
+              
+            </div>
+
+        </div>     
+                
+    </div>    
+    </div>
+    
+</div>
+
+</div>
+<div class="card-header"><h3 class="heading">Professional Details</h3> 
+</div>
+<div class="row py-2 gx-2 gy-2 p-2">
+
+
+    <div class="col-lg-2 col-md-2">
+ <label for="" class="form-label">Licence No.</label>
+ <select name="" id="" class="form-select">
+     <option value="" selected>Select</option>
+     <option value=""></option>
+     <option value=""></option>
+ </select>
+</div>
+
+<div class="col-lg-2 col-md-2">
+ <label for="" class="form-label">Institute</label>
+ <input type="text" class="form-control" placeholder="Institute">
+</div>
+<div class="col-lg-2 col-md-2">
+ <label for="" class="form-label">Issue Place</label>
+ <input type="text" class="form-control" placeholder="University Name">
+
+</div>
+<div class="col-lg-2 col-md-2">
+    <label for="" class="form-label">Issue Date</label>
+    <input type="date" class="form-control" placeholder="Issuedate">
+   
+   </div>
+   <div class="col-lg-2 col-md-2">
+    <label for="" class="form-label">Expiry Date</label>
+    <input type="date" class="form-control" placeholder="expirydate">
+   
+   </div>
+
+
+<div class="col-lg-2 col-md-2"> <label for="" class="form-label" required></label><div class="actions ms-auto"><button class="btn btn-main-outline">Add</button></div></div>
+</div>
+
+<div class="card card-style-3 border-right-radius-100 m-2"><div class="table-responsive py-3">
+<table class="table">
+ <thead>
+     <tr>
+         <th>Sl No.</th>
+         <th>Licence No.</th>
+         <th>Institute</th>
+         <th>Issue Place</th>
+         <th>Issue Date</th>
+            <th>Expiry Date</th>
+            <th>Action</th>
+          </tr>
+ </thead>
+ <tbody>
+     <tr>
+         <td>
+         1.
+         </td>
+         <td>
+             ADB8877939
+         </td>
+         <td>Institute Name</td>
+         <td>Issue Place</td>
+         <td>12-Jul-2022</td>
+         <td>11-Jul-2023</td>
+         <td><button type="button" id="delete">
+             <img src="assets/images/icons/icon-delete.svg" alt="">
+         </button><button  type="button" id="edit">
+             <img src="assets/images/icons/icon-edit.svg" alt="">
+         </button></td>
+          </tr>
+        </tbody>
+</table></div>
+</div>
+
+</div>
+
+
+<!--Contact details-->
+
+
+<div class="card card-style-1 border-right-radius-10 m-2" id="contact-details">
+        <div class="card-header">
+            <h3 class="heading">Contact Details</h3>
+            </div>
+ 
+<div class="row m-2">
+
+    <div class="col-md-6 px-0 py-0 ">
+
+        <div class="card card-style-1 border-right-radius-10 m-2">
+            <div class="card-header">
+                <h3 class="heading">Present Address</h3>
+             </div>
+        <div class="row py-2 px-2">
+            
+            <div class="col-lg-12">
+                <label for="" class="form-label">Address</label>
+                <textarea class="form-control" id="address" rows="3"></textarea>
+            </div>     
+            <div class="col-lg-6 col-md-6">
+                <label for="" class="form-label">City</label>
+                            <div class="input-group">
+                                <input type="text" class="form-control" placeholder="City">
+                                <button class="btn btn-secondary-fill btn-icon" type="button" id="button-addon2">
+                                    <img src="assets/images/icons/icon-search.svg" alt="">
+                                </button>
+                                </div>
+            </div>
+            <div class="col-lg-6 col-md-6">
+                <label for="" class="form-label">State</label>
+                <input type="text" class="form-control" placeholder="State" disabled>
+            </div>
+            <div class="col-lg-6 col-md-6">
+                <label for="" class="form-label">Country</label>
+                <input type="text" class="form-control" placeholder="Country" disabled>
+            </div>
+            <div class="col-lg-6 col-md-6">
+                <label for="" class="form-label">Pin/Zip Code</label>
+                <input type="text" class="form-control" placeholder="State">
+            </div>
+            <div class="col-lg-6 col-md-6">
+                <label for="" class="form-label" required>Phone No.</label>
+                <input type="text" class="form-control" placeholder="Phoneno">
+            </div>
+            <div class="col-lg-6 col-md-6">
+                <label for="" class="form-label" required>Mobile</label>
+                <input type="text" class="form-control" placeholder="Mobile">
+            </div>
+            <div class="col-lg-6 col-md-6">
+                <label for="" class="form-label">Email</label>
+                <input type="text" class="form-control" placeholder="email">
+            </div>
+
+
+            
+        </div>    
+        </div>
+        
+    </div>
+
+
+    <div class="col-md-6 px-0 py-0">
+
+        <div class="card card-style-1 border-right-radius-10 m-2">
+            <div class="card-header">
+                <h3 class="heading">Permanent Address</h3>
+                <div class="actions ms-auto">
+                <input class="form-check-input" type="checkbox" value="" id="sameaspresent">
+                        <label class="form-check-label" for="sameaspresent">
+                          Same as Present
+                        </label></div>
+             </div>
+        <div class="row py-2 px-2">
+            
+            <div class="col-lg-12">
+                <label for="" class="form-label">Address</label>
+                <textarea class="form-control" id="address" rows="3"></textarea>
+            </div>     
+            <div class="col-lg-6 col-md-6">
+                <label for="" class="form-label">City</label>
+                            <div class="input-group">
+                                <input type="text" class="form-control" placeholder="City">
+                                <button class="btn btn-secondary-fill btn-icon" type="button" id="button-addon2">
+                                    <img src="assets/images/icons/icon-search.svg" alt="">
+                                </button>
+                                </div>
+            </div>
+            <div class="col-lg-6 col-md-6">
+                <label for="" class="form-label">State</label>
+                <input type="text" class="form-control" placeholder="State" disabled>
+            </div>
+            <div class="col-lg-6 col-md-6">
+                <label for="" class="form-label">Country</label>
+                <input type="text" class="form-control" placeholder="Country" disabled>
+            </div>
+            <div class="col-lg-6 col-md-6">
+                <label for="" class="form-label">Pin/Zip Code</label>
+                <input type="text" class="form-control" placeholder="State">
+            </div>
+            <div class="col-lg-6 col-md-6">
+                <label for="" class="form-label" required>Phone No.</label>
+                <input type="text" class="form-control" placeholder="Phoneno">
+            </div>
+            <div class="col-lg-6 col-md-6">
+                <label for="" class="form-label" required>Mobile</label>
+                <input type="text" class="form-control" placeholder="Mobile">
+            </div>
+            <div class="col-lg-6 col-md-6">
+                <label for="" class="form-label">Email</label>
+                <input type="text" class="form-control" placeholder="email">
+            </div>
+
+
+            
+        </div>    
+        </div>
+        
+    </div>
+
+
+
+
+</div>
+
+
+</div>
+
+
+ 
+</div>
+</body>
+</html>
+
